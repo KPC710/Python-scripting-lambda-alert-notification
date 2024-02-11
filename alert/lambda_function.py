@@ -10,7 +10,7 @@ def lambda_handler(event, context):
     print(json.dumps(event))
 
     # Assuming the Slack webhook URL is passed as an environment variable
-    slack_webhook_url = "YOUR_SLACK_WEBHOOK_URL"
+    slack_webhook_url = ""
     slack_notifier = SlackNotifier(slack_webhook_url)
 
     # Process CodeBuild events
